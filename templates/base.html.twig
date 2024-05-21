@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+
+
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}bonjours!{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
         {% block stylesheets %}
         {% endblock %}
@@ -12,6 +14,23 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        <header>
+              <h1>Hello {{ controller_name }}! </h1>
+
+<a href="/ ">retour a l'acceuil</a>
+<a href="/actuality">  actualité</a>
+<a href="/live/view/all">  voir tout les live</a>
+<a href="/create/streamer"> crée un streameur</a>
+<a href="/live"> live </a>
+<a href="/live/create"> crée un live </a>
+<a href="/live/view/detailled"> vue détaillée d'un live</a>
+<a href="/material"> demande de matérielle pour streameur</a>
+<a href="/space/admin"> espace administrater</a>
+<a href="/space/streamer"> espace streameur</a>
+</header>   
+        </header>
+
+        {% endblock %}
     </body>
 </html>
