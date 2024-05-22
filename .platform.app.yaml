@@ -1,6 +1,6 @@
 name: app
 
-image : {pexels-alscre-3977908.webp}
+image : pexels-alscre-3977908.webp
 
 type: php:8.3
 
@@ -15,9 +15,7 @@ runtime:
 
   variables:
    php:
-        #uncomment on PHP 7.4+
-                
-        opcache.preload: config/preload.php
+         opcache.preload: config/preload.php
 
 build:
     flavor: none
