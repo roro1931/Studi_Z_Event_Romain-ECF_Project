@@ -11,9 +11,9 @@ runtime:
         - ctype
         
 
- variables:
-      php:
-         opcache.preload: config/preload.php
+# variables:
+#     php:
+#         opcache.preload: config/preload.php
 
 build:
     flavor: none
