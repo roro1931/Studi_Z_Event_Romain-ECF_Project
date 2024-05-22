@@ -42,18 +42,19 @@ workers:
 
 mounts:
     "/var": { source: local, source_path: var }
-    
+    'web/uploads': {source: local
+source_path: uploads}
 
 hooks:
     build: |
-        set -x -e
+        set -e
 
         curl -fs https://get.symfony.com/cloud/configurator | bash
         
         NODE_VERSION=18 symfony-build
 
     deploy: |
-        set -x -e
+        set -e
 
         symfony-deploy
 x
