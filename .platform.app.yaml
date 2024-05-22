@@ -1,7 +1,5 @@
 name: app
 
-image : pexels-alscre-3977908.webp
-
 type: php:8.3
 
 runtime:
@@ -41,8 +39,7 @@ workers:
             start: symfony console --time-limit=3600 --memory-limit=64M messenger:consume async
 
 mounts:
-    'web/uploads': {source: local,
-source_path: uploads}
+    'web/uploads': {source: local, source_path: uploads}
 
 hooks:
     build: |
