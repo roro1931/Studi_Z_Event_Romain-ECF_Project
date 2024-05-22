@@ -1,10 +1,9 @@
-"https://{all}/": { type: upstream, upstream: "app:http" }
-"http://{all}/": { type: redirect, to: "https://{all}/" }
+
 
 "https://www.{default}/":
-type: upstream
-upstream: "app:http"
+{type: upstream
+upstream: "app:http"}
 
 "https://{default}/":
-type: redirect
-to: "https://www.{default}/"
+{type: redirect
+to: "https://www.{default}/"}h
