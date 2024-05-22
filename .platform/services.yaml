@@ -1,0 +1,2 @@
+type: postgresql:16
+disk: 256
