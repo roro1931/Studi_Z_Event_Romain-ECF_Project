@@ -41,7 +41,7 @@ workers:
             start: symfony console --time-limit=3600 --memory-limit=64M messenger:consume async
 
 mounts:
-    'web/uploads': {source: local
+    'web/uploads': {source: local,
 source_path: uploads}
 
 hooks:
