@@ -52,4 +52,4 @@ hooks:
     deploy: |
         set -e
 
-        symfony-deploy -
+        symfony-deploy -e
