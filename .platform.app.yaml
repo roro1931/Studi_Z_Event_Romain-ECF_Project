@@ -12,8 +12,8 @@ runtime:
         
 
   variables:
-   php:
-         opcache.preload: config/preload.php
+#   php:
+#         opcache.preload: config/preload.php
 
 build:
     flavor: none
