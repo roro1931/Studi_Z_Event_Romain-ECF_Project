@@ -50,6 +50,6 @@ hooks:
         NODE_VERSION=18 symfony-build
 
     deploy: |
-        set -
+        set -e
 
         symfony-deploy -e
