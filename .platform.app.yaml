@@ -11,9 +11,9 @@ runtime:
         - ctype
         
 
-variables:
-    php:
-         uncomment on PHP 7.4+
+  variables:
+   php:
+        #uncomment on PHP 7.4+
                 
         opcache.preload: config/preload.php
 
