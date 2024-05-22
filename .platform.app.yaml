@@ -24,8 +24,7 @@ disk: 512
 web:
     locations:
         "/":
-            root: "public"
-            expires: 1h
+            root: "web"
             passthru: "/index.php"
 
 workers:
